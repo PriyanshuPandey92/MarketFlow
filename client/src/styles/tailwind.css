@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #7A8471; /* Sage green for trust and sustainability - green-600 */
+    --color-primary-50: #F4F6F3; /* Very light sage - green-50 */
+    --color-primary-100: #E8ECE5; /* Light sage - green-100 */
+    --color-primary-200: #D1D9CB; /* Lighter sage - green-200 */
+    --color-primary-300: #A8B89E; /* Medium light sage - green-300 */
+    --color-primary-400: #8FA085; /* Medium sage - green-400 */
+    --color-primary-500: #7A8471; /* Base sage green - green-500 */
+    --color-primary-600: #6B7562; /* Darker sage - green-600 */
+    --color-primary-700: #5A6353; /* Dark sage - green-700 */
+    --color-primary-800: #4A5244; /* Very dark sage - green-800 */
+    --color-primary-900: #3A4135; /* Deepest sage - green-900 */
+
+    /* Secondary Colors */
+    --color-secondary: #C17B5A; /* Terracotta for warmth and craftsmanship - orange-600 */
+    --color-secondary-50: #FBF7F4; /* Very light terracotta - orange-50 */
+    --color-secondary-100: #F6EFEA; /* Light terracotta - orange-100 */
+    --color-secondary-200: #EDDFD5; /* Lighter terracotta - orange-200 */
+    --color-secondary-300: #DBBFAB; /* Medium light terracotta - orange-300 */
+    --color-secondary-400: #CA9D82; /* Medium terracotta - orange-400 */
+    --color-secondary-500: #C17B5A; /* Base terracotta - orange-500 */
+    --color-secondary-600: #B06B4A; /* Darker terracotta - orange-600 */
+    --color-secondary-700: #9E5A3A; /* Dark terracotta - orange-700 */
+    --color-secondary-800: #8C4A2A; /* Very dark terracotta - orange-800 */
+    --color-secondary-900: #7A3A1A; /* Deepest terracotta - orange-900 */
+
+    /* Accent Colors */
+    --color-accent: #E07A5F; /* Coral for conversion and highlights - red-400 */
+    --color-accent-50: #FDF6F4; /* Very light coral - red-50 */
+    --color-accent-100: #FBECEA; /* Light coral - red-100 */
+    --color-accent-200: #F6D9D5; /* Lighter coral - red-200 */
+    --color-accent-300: #EDB3A6; /* Medium light coral - red-300 */
+    --color-accent-400: #E48D77; /* Medium coral - red-400 */
+    --color-accent-500: #E07A5F; /* Base coral - red-500 */
+    --color-accent-600: #D66A4F; /* Darker coral - red-600 */
+    --color-accent-700: #CC5A3F; /* Dark coral - red-700 */
+    --color-accent-800: #C24A2F; /* Very dark coral - red-800 */
+    --color-accent-900: #B83A1F; /* Deepest coral - red-900 */
+
+    /* Background Colors */
+    --color-background: #FEFCF8; /* Warm white for premium canvas - neutral-50 */
+    --color-surface: #F5F3EF; /* Subtle beige for card depth - neutral-100 */
+    --color-surface-hover: #F0EDE7; /* Hover state for surfaces - neutral-200 */
+
+    /* Text Colors */
+    --color-text-primary: #2D3436; /* Charcoal for clear readability - gray-800 */
+    --color-text-secondary: #636E72; /* Medium gray for hierarchy - gray-600 */
+    --color-text-muted: #8B9196; /* Light gray for subtle text - gray-500 */
+    --color-text-inverse: #FFFFFF; /* White text for dark backgrounds - white */
+
+    /* Status Colors */
+    --color-success: #00B894; /* Fresh green for positive actions - emerald-500 */
+    --color-success-50: #ECFDF5; /* Very light success - emerald-50 */
+    --color-success-100: #D1FAE5; /* Light success - emerald-100 */
+    --color-success-600: #059669; /* Darker success - emerald-600 */
+
+    --color-warning: #FDCB6E; /* Warm amber for gentle alerts - amber-400 */
+    --color-warning-50: #FFFBEB; /* Very light warning - amber-50 */
+    --color-warning-100: #FEF3C7; /* Light warning - amber-100 */
+    --color-warning-600: #D97706; /* Darker warning - amber-600 */
+
+    --color-error: #E17055; /* Muted coral for helpful corrections - red-500 */
+    --color-error-50: #FEF2F2; /* Very light error - red-50 */
+    --color-error-100: #FEE2E2; /* Light error - red-100 */
+    --color-error-600: #DC2626; /* Darker error - red-600 */
+
+    /* Brand Specific Colors */
+    --color-brand-gold: #D4A574; /* Warm gold for premium CTAs - yellow-600 */
+    --color-brand-teal: #2D5A5A; /* Deep teal for trust signals - teal-700 */
+
+    /* Border Colors */
+    --color-border: #E5E7EB; /* Light border - gray-200 */
+    --color-border-muted: #F3F4F6; /* Very light border - gray-100 */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-text-primary font-body;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  }
+
+  .font-accent {
+    font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-gold hover:bg-accent text-white font-medium px-6 py-3 rounded-lg transition-colors duration-300 ease-out;
+  }
+
+  .btn-secondary {
+    @apply bg-primary hover:bg-primary-600 text-white font-medium px-6 py-3 rounded-lg transition-colors duration-300 ease-out;
+  }
+
+  .card {
+    @apply bg-surface border border-border-muted rounded-lg shadow-sm;
+  }
+
+  .input {
+    @apply border border-border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
