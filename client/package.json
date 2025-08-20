@@ -31,9 +31,9 @@
     "zustand": "^5.0.5"
   },
   "scripts": {
-    "start": "vite",
-    "build": "vite build --sourcemap",
-    "serve": "vite preview"
+  "dev": "vite",
+  "build": "vite build",
+  "start": "vite preview --port $PORT"
   },
   "eslintConfig": {
     "extends": [
