@@ -101,7 +101,7 @@ const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
-                to="/product-catalog-intelligent-browsing"
+                to="/productCatalog"
                 className="btn-primary inline-flex items-center justify-center space-x-2"
               >
                 <span>Start Exploring</span>

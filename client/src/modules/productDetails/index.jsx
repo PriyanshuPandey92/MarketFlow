@@ -9,7 +9,7 @@ import AddToCartSection from './components/AddToCartSection';
 import RelatedProducts from './components/RelatedProducts';
 import TrustIndicators from './components/TrustIndicators';
 
-const ProductDetailDecisionSupport = () => {
+const ProductDetail = () => {
   const [selectedVariant, setSelectedVariant] = useState('medium');
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState('overview');
@@ -167,11 +167,11 @@ Her work reflects the timeless beauty of Italian craftsmanship, combined with mo
       <div className="bg-surface border-b border-border-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center space-x-2 text-sm">
-            <Link to="/homepage-discovery-engine" className="text-text-secondary hover:text-text-primary transition-colors duration-300">
+            <Link to="/homepage" className="text-text-secondary hover:text-text-primary transition-colors duration-300">
               Home
             </Link>
             <Icon name="ChevronRight" size={16} className="text-text-muted" />
-            <Link to="/product-catalog-intelligent-browsing" className="text-text-secondary hover:text-text-primary transition-colors duration-300">
+            <Link to="/productCatalog" className="text-text-secondary hover:text-text-primary transition-colors duration-300">
               Kitchen & Dining
             </Link>
             <Icon name="ChevronRight" size={16} className="text-text-muted" />
@@ -220,4 +220,4 @@ Her work reflects the timeless beauty of Italian craftsmanship, combined with mo
   );
 };
 
-export default ProductDetailDecisionSupport;
+export default ProductDetail;

@@ -1,10 +1,10 @@
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import React from 'react';
-import OAuthLogin from 'modules/user-account-dashboard-personal-experience/components/OAuthLogin';
-import Dashboard from 'modules/user-account-dashboard-personal-experience/components/Dashboard'; // create this component
+import OAuthLogin from 'modules/accountDashboard/components/OAuthLogin';
+import Dashboard from 'modules/accountDashboard/components/Dashboard'; // create this component
 import useAuthStore from 'shared/store/useAuthStore';
 
-const UserAccountDashboardPersonalExperience = () => {
+const AccountDashboard = () => {
   const isLoggedIn = useAuthStore((state) => state.isLoggedIn);
 
 
@@ -15,4 +15,4 @@ const UserAccountDashboardPersonalExperience = () => {
   );
 };
 
-export default UserAccountDashboardPersonalExperience;
+export default AccountDashboard;

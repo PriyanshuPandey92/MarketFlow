@@ -97,7 +97,7 @@ const DiscoverByPurpose = () => {
           {purposeCategories.map((category) => (
             <Link
               key={category.id}
-              to="/product-catalog-intelligent-browsing"
+              to="/productCatalog"
               className="group block"
             >
               <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden h-full">
@@ -171,7 +171,7 @@ const DiscoverByPurpose = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/product-catalog-intelligent-browsing"
+                to="/productCatalog"
                 className="btn-primary"
               >
                 Browse All Products

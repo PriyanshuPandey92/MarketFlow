@@ -9,7 +9,7 @@ import FeaturedMakers from './components/FeaturedMakers';
 import SocialProofSection from './components/SocialProofSection';
 import SmartRecommendations from './components/SmartRecommendations';
 
-const HomepageDiscoveryEngine = () => {
+const Homepage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const HomepageDiscoveryEngine = () => {
               </p>
             </div>
             <Link
-              to="/product-catalog-intelligent-browsing"
+              to="/productCatalog"
               className="hidden sm:flex items-center space-x-2 text-primary hover:text-primary-600 font-medium transition-colors duration-300"
             >
               <span>View All</span>
@@ -114,4 +114,4 @@ const HomepageDiscoveryEngine = () => {
   );
 };
 
-export default HomepageDiscoveryEngine;
+export default Homepage;

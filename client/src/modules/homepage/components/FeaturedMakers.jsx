@@ -191,7 +191,7 @@ Her Austin-based company works directly with artisan groups in Peru and Guatemal
               {/* Actions */}
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  to="/product-catalog-intelligent-browsing"
+                  to="/productCatalog"
                   className="btn-primary flex-1 text-center"
                 >
                   View Products

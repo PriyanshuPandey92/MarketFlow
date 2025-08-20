@@ -192,7 +192,7 @@ const AddToCartSection = ({ product, selectedVariant, quantity, onQuantityChange
           </button>
 
           <Link
-            to="/shopping-cart-checkout-frictionless-conversion"
+            to="/shoppingCart"
             className="flex-1 py-3 px-6 rounded-lg font-medium border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300"
           >
             <div className="flex items-center justify-center space-x-2">

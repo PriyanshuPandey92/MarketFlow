@@ -10,7 +10,7 @@ import BreadcrumbNav from './components/BreadcrumbNav';
 import SortingOptions from './components/SortingOptions';
 import ViewToggle from './components/ViewToggle';
 
-const ProductCatalogIntelligentBrowsing = () => {
+const ProductCatalog = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [filters, setFilters] = useState({
@@ -308,8 +308,8 @@ const ProductCatalogIntelligentBrowsing = () => {
   const currentProducts = filteredProducts.slice(startIndex, endIndex);
 
   const breadcrumbItems = [
-    { name: 'Home', path: '/homepage-discovery-engine' },
-    { name: 'Browse Products', path: '/product-catalog-intelligent-browsing' }
+    { name: 'Home', path: '/homepage' },
+    { name: 'Browse Products', path: '/productCatalog' }
   ];
 
   if (filters.category) {
@@ -559,4 +559,4 @@ const ProductCatalogIntelligentBrowsing = () => {
   );
 };
 
-export default ProductCatalogIntelligentBrowsing;
+export default ProductCatalog;

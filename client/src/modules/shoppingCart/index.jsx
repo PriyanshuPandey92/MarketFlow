@@ -9,7 +9,7 @@ import ShippingOptions from './components/ShippingOptions';
 import GiftOptions from './components/GiftOptions';
 import TrustElements from './components/TrustElements';
 
-const ShoppingCartCheckoutFrictionlessConversion = () => {
+const ShoppingCart = () => {
   const [currentStep, setCurrentStep] = useState('cart');
   const [isGuestCheckout, setIsGuestCheckout] = useState(false);
   const [cartItems, setCartItems] = useState([]);
@@ -132,7 +132,7 @@ const ShoppingCartCheckoutFrictionlessConversion = () => {
               Discover amazing products from passionate makers and start building your collection.
             </p>
             <Link
-              to="/homepage-discovery-engine"
+              to="/homepage"
               className="inline-flex items-center space-x-2 bg-primary hover:bg-primary-600 text-white font-medium px-6 py-3 rounded-lg transition-colors duration-300"
             >
               <Icon name="Compass" size={20} />
@@ -284,7 +284,7 @@ const ShoppingCartCheckoutFrictionlessConversion = () => {
                 {/* Continue Shopping */}
                 <div className="flex items-center justify-between">
                   <Link
-                    to="/product-catalog-intelligent-browsing"
+                    to="/productCatalog"
                     className="inline-flex items-center space-x-2 text-primary hover:text-primary-600 font-medium transition-colors duration-300"
                   >
                     <Icon name="ArrowLeft" size={16} />
@@ -417,4 +417,4 @@ const ShoppingCartCheckoutFrictionlessConversion = () => {
   );
 };
 
-export default ShoppingCartCheckoutFrictionlessConversion;
+export default ShoppingCart;

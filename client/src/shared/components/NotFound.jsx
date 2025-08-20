@@ -19,7 +19,7 @@ const NotFound = () => {
         
         <div className="space-y-4">
           <Link
-            to="/homepage-discovery-engine"
+            to="/homepage"
             className="inline-flex items-center justify-center space-x-2 w-full bg-primary hover:bg-primary-600 text-white font-medium px-6 py-3 rounded-lg transition-colors duration-300"
           >
             <Icon name="Home" size={20} />

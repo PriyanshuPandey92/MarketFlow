@@ -9,31 +9,31 @@ const Sidebar = () => {
   const navigationItems = [
     { 
       name: 'Discovery Engine', 
-      path: '/homepage-discovery-engine', 
+      path: '/homepage', 
       icon: 'Compass',
       description: 'Curated collections & maker stories'
     },
     { 
       name: 'Smart Browse', 
-      path: '/product-catalog-intelligent-browsing', 
+      path: '/productCatalog', 
       icon: 'Grid3X3',
       description: 'Intelligent product filtering'
     },
     { 
       name: 'Product Details', 
-      path: '/product-detail-decision-support', 
+      path: '/productDetail', 
       icon: 'Package',
       description: 'Complete decision support'
     },
     { 
       name: 'Cart & Checkout', 
-      path: '/shopping-cart-checkout-frictionless-conversion', 
+      path: '/shoppingCart', 
       icon: 'ShoppingCart',
       description: 'Frictionless conversion'
     },
     { 
       name: 'My Account', 
-      path: '/user-account-dashboard-personal-experience', 
+      path: '/accountDashboard', 
       icon: 'User',
       description: 'Personal experience hub'
     },

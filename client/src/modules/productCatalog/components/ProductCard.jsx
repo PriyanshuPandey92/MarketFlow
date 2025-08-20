@@ -49,7 +49,7 @@ const ProductCard = ({
   if (viewMode === 'list') {
     return (
       <Link
-        to={`/product-detail-decision-support?id=${product.id}`}
+        to={`/productDetail?id=${product.id}`}
         className="block bg-surface rounded-lg border border-border-muted hover:border-primary-300 hover:shadow-md transition-all duration-300 overflow-hidden"
       >
         <div className="flex">
@@ -176,7 +176,7 @@ const ProductCard = ({
   // Grid view
   return (
     <Link
-      to={`/product-detail-decision-support?id=${product.id}`}
+      to={`/productDetail?id=${product.id}`}
       className="group block bg-surface rounded-lg border border-border-muted hover:border-primary-300 hover:shadow-lg transition-all duration-300 overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

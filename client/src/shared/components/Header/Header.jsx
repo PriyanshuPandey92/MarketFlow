@@ -10,11 +10,11 @@ const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);  
 
   const navigationItems = [
-    { name: 'Discover', path: '/homepage-discovery-engine', icon: 'Compass' },
-    { name: 'Browse', path: '/product-catalog-intelligent-browsing', icon: 'Grid3X3' },
-    { name: 'Products', path: '/product-detail-decision-support', icon: 'Package' },
-    { name: 'Cart', path: '/shopping-cart-checkout-frictionless-conversion', icon: 'ShoppingCart' },
-    { name: 'Account', path: '/user-account-dashboard-personal-experience', icon: 'User' },
+    { name: 'Discover', path: '/homepage', icon: 'Compass' },
+    { name: 'Browse', path: '/productCatalog', icon: 'Grid3X3' },
+    { name: 'Products', path: '/productDetail', icon: 'Package' },
+    { name: 'Cart', path: '/shoppingCart', icon: 'ShoppingCart' },
+    { name: 'Account', path: '/accountDashboard', icon: 'User' },
     { name: 'Support', path: '/customer-support-hub-confidence-center', icon: 'HelpCircle' }
   ];
 
@@ -48,7 +48,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link 
-            to="/homepage-discovery-engine" 
+            to="/homepage" 
             className="flex items-center space-x-3 group "
             onClick={closeMenu}
           >

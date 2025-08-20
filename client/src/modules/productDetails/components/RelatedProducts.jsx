@@ -20,7 +20,7 @@ const RelatedProducts = ({ products }) => {
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold text-text-primary">You Might Also Like</h2>
         <Link
-          to="/product-catalog-intelligent-browsing"
+          to="/productCatalog"
           className="text-primary hover:text-primary-600 text-sm font-medium transition-colors duration-300 flex items-center space-x-1"
         >
           <span>View All</span>
